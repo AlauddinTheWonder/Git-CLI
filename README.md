@@ -16,13 +16,13 @@
 
 	git add .
 
-	# Adds the files in the local repository and stages them for commit
+	// Adds the files in the local repository and stages them for commit
 
 - Commit the files that you've staged in your local repository.
 
 	git commit -m 'First commit'
 
-	# Commits the tracked changes and prepares them to be pushed to a remote repository
+	// Commits the tracked changes and prepares them to be pushed to a remote repository
 
 - Copy remote repository URL fieldIn your GitHub repository, in the right sidebar, copy the remote repository URL.
 
@@ -30,15 +30,15 @@
 
 	git remote add origin <remote repository URL>
 
-	# Sets the new remote
+	// Sets the new remote
 
 
 	git remote -v
 
-	# Verifies the new remote URL
+	// Verifies the new remote URL
 
 - Push the changes in your local repository to GitHub.
 
 	git push origin master
 
-	# Pushes the changes in your local repository up to the remote repository you specified as the origin
+	// Pushes the changes in your local repository up to the remote repository you specified as the origin
