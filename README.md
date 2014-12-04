@@ -1,44 +1,67 @@
 ## Alauddin Ansari The Wonder
 
-- Create a new repository on GitHub.
+### Working with GIT from terminal
 
-- In Terminal, change the current working directory to your local project.
+* Create a new repository on GitHub.
+
+- Create a directory on your local system
+```sh
+$ mkdir MyNewGitDir
+``` 
+
+
+- Change the current working directory to your local project.
+```sh
+$ cd MyNewGitDir
+``` 
+
 
 - Initialize the local directory as a Git repository.
+```sh
+$ git init
+``` 
 
-    git init
+> If you are initializing fresh new project first time on your local, only then use git remote add origin otherwise skip this step 
 
-- Sync your existing project (If you got error on "git push" command)
+> Copy remote repository URL fieldIn your GitHub repository, in the right sidebar, copy the remote repository URL.
 
-    git pull <remote repository URL>
-
-- Add the files in your new local repository. This stages them for the first commit.
-
-    git add .
-
-    // Adds the files in the local repository and stages them for commit
-
-- Commit the files that you've staged in your local repository.
-
-    git commit -m 'First commit'
-
-    // Commits the tracked changes and prepares them to be pushed to a remote repository
-
-- Copy remote repository URL fieldIn your GitHub repository, in the right sidebar, copy the remote repository URL.
 
 - In Terminal, add the URL for the remote repository where your local repostory will be pushed.
+```sh
+$ git remote add origin [remote repository URL]
+``` 
 
-    git remote add origin <remote repository URL>
+- Verifies the new remote URL
+```sh
+$ git remote -v
+``` 
 
-    // Sets the new remote
-    
-    git remote -v
 
-    // Verifies the new remote URL
+- Sync your existing project
+```sh
+$ git pull [remote repository URL]
+```
+
+- Add the files in your new local repository. This stages them for commit.
+```sh
+$ git add .
+``` 
+
+
+- Commits the tracked changes and prepares them to be pushed to a remote repository
+```sh
+$ git commit -m 'First commit'
+``` 
+
 
 - Push the changes in your local repository to GitHub.
+```sh
+$ git push origin master
+``` 
 
-    git push origin master
 
-    // Pushes the changes in your local repository up to the remote repository you specified as the origin
+> Enter your GitHub UserName
 
+> Enter your GitHub Password
+
+> :)
